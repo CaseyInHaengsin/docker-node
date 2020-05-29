@@ -1,1 +1,6 @@
-/node_modules
+
+# Learning docker
+
+## Setup
+### docker build .
+### docker run {id}
