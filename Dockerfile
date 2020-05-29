@@ -3,12 +3,14 @@ FROM node:alpine
 
 #Set home directory
 WORKDIR /usr/app
-
+#Copy over package.json
+COPY ./package.json ./
 #install dependencies
 RUN npm install
 
-#Move files over
 COPY ./ ./
+#Move files over
+
 
 #Run startup script
 CMD ["npm", "start"]
